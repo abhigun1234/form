@@ -1,0 +1,26 @@
+<div class="container" >
+
+  <form action="">
+    <div class="form-group">
+      <label >Name</label>
+      <input type="text" class="form-control"  ngModel>
+    </div>
+    <div class="form-group">
+      <label >Email</label>
+      <input type="text" class="form-control" ngModel >
+    </div>
+    <div class="form-group">
+      <label >PhoneNo</label>
+      <input type="text" class="form-control"  ngModel>
+    </div>
+    <div class="form-group">
+     <select class="custom-select" ngModel>
+       <option *ngFor="let city of citys " >
+        {{city}}
+       </option>
+     </select>
+    </div>
+    <button class="btn btn-primary" >Submit</button> 
+    </form>
+</div>
+
